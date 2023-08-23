@@ -2,11 +2,11 @@ package ApprovalAuthorityDesign;
 
 public abstract class Managers {
 
-    protected Manager manager;
+    protected Managers manager;
     int approvalLimit;
     String managerName;
 
-    public void setManager(Manager manager){
+    public void setManager(Managers manager){
         this.manager = manager;
     }
 
@@ -20,8 +20,6 @@ public abstract class Managers {
         }
     }
 
-    protected void processSalary(int employeeSalary) {
-
-    }
+    protected abstract void processSalary(int employeeSalary);
 
 }
